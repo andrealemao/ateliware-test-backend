@@ -15,12 +15,12 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 const db = require('./app/models')
-// db.sequelize.sync()
+db.sequelize.sync()
 
 // For developing, use the code below. May need to drop existing tables and re-sync database.
-db.sequelize.sync({ force: true }).then(() => {
-  console.log("Drop and re-sync db.");
-})
+// db.sequelize.sync({ force: true }).then(() => {
+//   console.log("Drop and re-sync db.");
+// })
 
 app.get('/', (req, res) => {
     res.json({ message: "Welcome to the application" })
