@@ -5,7 +5,7 @@ const app = express()
 
 var corsOptions = {
     // origin: 'http://localhost:8081'
-    origin: 'https://epic-kowalevski-50ba5f.netlify.app/'
+    origin: 'https://epic-kowalevski-50ba5f.netlify.app'
 }
 
 app.use(cors(corsOptions))
