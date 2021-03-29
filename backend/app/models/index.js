@@ -5,7 +5,7 @@ const Sequelize = require('sequelize')
 // })
 const sequelize = new Sequelize('mysql-ateliware', 'b13d423df69031', '4372da29', {
     host: 'us-cdbr-east-03.cleardb.com',
-    // port: 3306,
+    port: 3306,
     dialect: 'mysql'
 })
 
